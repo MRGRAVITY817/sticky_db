@@ -45,7 +45,6 @@ defmodule StickyDb.MixProject do
     [
       files: [
         "lib",
-        "native",
         "mix.exs",
         "README.md",
         "CHANGELOG.md",
