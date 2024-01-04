@@ -1,7 +1,10 @@
 defmodule StickyDb do
-  @moduledoc """
-  Documentation for `StickyDb`.
-  """
+  @external_resource "README.md"
+
+  @moduledoc "README.md"
+             |> File.read!()
+             |> String.split("<!-- MDOC -->")
+             |> Enum.fetch!(1)
 
   @doc """
   Hello world.
