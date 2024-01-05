@@ -1,4 +1,4 @@
-defmodule StickyDb.MixProject do
+defmodule StickyDB.MixProject do
   use Mix.Project
 
   @version "0.0.1"
@@ -27,6 +27,8 @@ defmodule StickyDb.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:ecto_sql, "~> 3.0"},
+      {:gluesql, "~> 0.15.0"},
       {:ex_doc, "~> 0.31", only: :dev, runtime: false}
     ]
   end

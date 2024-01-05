@@ -1,4 +1,4 @@
-defmodule StickyDb do
+defmodule StickyDB do
   @external_resource "README.md"
 
   @moduledoc "README.md"
@@ -11,7 +11,7 @@ defmodule StickyDb do
 
   ## Examples
 
-      iex> StickyDb.hello()
+      iex> StickyDB.hello()
       :world
 
   """

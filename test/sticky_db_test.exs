@@ -1,8 +1,8 @@
-defmodule StickyDbTest do
+defmodule StickyDBTest do
   use ExUnit.Case
-  doctest StickyDb
+  doctest StickyDB
 
   test "greets the world" do
-    assert StickyDb.hello() == :world
+    assert StickyDB.hello() == :world
   end
 end
