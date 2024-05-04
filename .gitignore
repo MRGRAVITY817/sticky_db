@@ -24,3 +24,9 @@ sticky_db-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+# Rust .gitignore files
+**/target
+
+# Rustler generated files
+priv/native/*

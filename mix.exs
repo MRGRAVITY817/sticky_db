@@ -28,8 +28,10 @@ defmodule StickyDB.MixProject do
   defp deps do
     [
       {:ecto_sql, "~> 3.0"},
-      {:gluesql, "~> 0.15.0"},
-      {:ex_doc, "~> 0.31", only: :dev, runtime: false}
+      {:rustler, "~> 0.29.0"},
+      {:jason, "~> 1.4.1"},
+      {:ex_doc, "~> 0.31", only: :dev, runtime: false},
+      {:earmark, "~> 1.4", only: :dev, runtime: false}
     ]
   end
 
@@ -50,7 +52,8 @@ defmodule StickyDB.MixProject do
         "mix.exs",
         "README.md",
         "CHANGELOG.md",
-        "LICENSE"
+        "LICENSE",
+        "native"
       ],
       maintainers: ["Hoon Wee"],
       licenses: ["Apache-2.0"],
